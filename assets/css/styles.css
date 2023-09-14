@@ -119,7 +119,7 @@ img {
 
 .bd-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .l-header {
@@ -130,6 +130,7 @@ img {
   z-index: var(--z-fixed);
   box-shadow: 0 -1px 4px rgba(0,0,0,0.1);
   transition: 0.3s;
+  background-color: var(--body-color);
 }
 
 /*========== NAV ==========*/
@@ -223,6 +224,7 @@ img {
   width: 120px;
   /* height: 120px; */
   /* border-radius: 50%; */
+  border-radius: 0.25rem;
   justify-self: center;
   margin-bottom: var(--mb-1);
 }
@@ -266,10 +268,30 @@ img {
   color: var(--container-color);
 }
 /*========== SOCIAL ==========*/
+.social__container {
+  grid-template-columns: max-content;
+  gap: 1rem;
+}
 
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
 
+.social__link:hover {
+  color: var(--title-color);
+}
+
+.social__icon {
+  font-size: 1.2rem;
+  margin-top: 0.25rem;
+}
 /*========== PROFILE ==========*/
-
+.profile__description {
+  text-align: center;
+}
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
 
