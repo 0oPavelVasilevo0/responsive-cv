@@ -422,7 +422,7 @@ img {
 
 .social__icon {
   font-size: 1.2rem;
-  margin-top: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 /*========== PROFILE ==========*/
@@ -499,7 +499,8 @@ img {
 }
 
 .skills__circle,
-.languages__circle {
+.languages__circle,
+.certificate__circle {
   display: inline-block;
   width: 5px;
   height: 5px;
