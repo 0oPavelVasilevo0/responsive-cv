@@ -1,5 +1,7 @@
 /*==================== SHOW MENU ====================*/
 
+// const { html2pdf } = require("./html2pdf.bundle.min.js")
+
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
         nav = document.getElementById(navId)
@@ -101,13 +103,17 @@ function removeScale () {
 /*==================== GENERATE PDF ====================*/ 
 // PDF generated area
 
+let areaCv = document.getElementById('area-cv')
+
 let resumeButton = document.getElementById('resume-button')
 
 // Html2pdf options
 
 
 // Function to call areaCv and Html2Pdf options 
-
+function generateResume() {
+    html2pdf(areaCv)
+}
 
 // When the button is clicked, it executes the three functions
 
@@ -116,8 +122,7 @@ resumeButton.addEventListener('click',() => {
     scaleCv()
 
     // 2. The PDF is generated
-
-
+    generateResume()
+    
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
-}
-)
+})
