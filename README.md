@@ -1,6 +1,6 @@
-- Responsive Resume Cv Website Using HTML CSS And JavaScript
-- Contains a mobile navigation with icons.
-- Smooth scrolling in each section in mobile version.
+- Responsive Cv Website Using HTML CSS And JavaScript
+- Mobile navigation.
+- Smooth scrolling.
 - Includes a light and dark theme.
 - Export resume website to PDF.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+- Compatible with all mobile devices
